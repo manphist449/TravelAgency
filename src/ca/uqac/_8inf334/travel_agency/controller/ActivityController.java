@@ -1,6 +1,6 @@
 package ca.uqac._8inf334.travel_agency.controller;
 
-import ca.uqac._8inf334.travel_agency.Activity;
+import ca.uqac._8inf334.travel_agency.classes.Activity;
 
 import java.util.ArrayList;
 

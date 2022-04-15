@@ -1,7 +1,6 @@
-package ca.uqac._8inf334.travel_agency;
+package ca.uqac._8inf334.travel_agency.classes;
 
 import java.text.DateFormat;
-import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;

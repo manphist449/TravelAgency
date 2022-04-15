@@ -1,4 +1,4 @@
-package ca.uqac._8inf334.travel_agency;
+package ca.uqac._8inf334.travel_agency.classes;
 
 import ca.uqac._8inf334.travel_agency.comparator.ReviewSortByDateDESC;
 
@@ -112,5 +112,10 @@ public class Hotel {
             }
         }
 
+    }
+
+    public String toString()
+    {
+        return "Hotel: " + this.getName();
     }
 }

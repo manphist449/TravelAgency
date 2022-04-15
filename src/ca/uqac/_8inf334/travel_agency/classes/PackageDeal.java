@@ -1,15 +1,15 @@
-package ca.uqac._8inf334.travel_agency;
+package ca.uqac._8inf334.travel_agency.classes;
 
 import java.util.Date;
 
-public class Package {
+public class PackageDeal {
 
     private float price;
     private Date date;
     private Fly fly;
     private Hotel hotel;
 
-    public Package(float price,Date date, Fly fly, Hotel hotel){
+    public PackageDeal(float price, Date date, Fly fly, Hotel hotel){
 
         this.price = price;
         this.date = date;

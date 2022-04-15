@@ -1,11 +1,8 @@
 package ca.uqac._8inf334.travel_agency.controller;
 
-import ca.uqac._8inf334.travel_agency.Hotel;
-import ca.uqac._8inf334.travel_agency.Location;
-import ca.uqac._8inf334.travel_agency.Review;
-import ca.uqac._8inf334.travel_agency.Stars;
+import ca.uqac._8inf334.travel_agency.classes.Review;
+import ca.uqac._8inf334.travel_agency.classes.Stars;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class ReviewController extends CommandLineController {

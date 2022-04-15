@@ -1,8 +1,7 @@
 package ca.uqac._8inf334.travel_agency.controller;
 
-import ca.uqac._8inf334.travel_agency.Destination;
-import ca.uqac._8inf334.travel_agency.Location;
-import ca.uqac._8inf334.travel_agency.controller.CommandLineController;
+import ca.uqac._8inf334.travel_agency.classes.Destination;
+import ca.uqac._8inf334.travel_agency.classes.Location;
 
 import java.util.ArrayList;
 

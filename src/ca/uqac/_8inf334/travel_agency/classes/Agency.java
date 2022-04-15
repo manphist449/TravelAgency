@@ -1,11 +1,14 @@
-package ca.uqac._8inf334.travel_agency;
+package ca.uqac._8inf334.travel_agency.classes;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Agency {
 
     private String name;
     private ArrayList<Destination> listDestination;
+    private HashSet<PackageDeal> listPackage;
+    private HashSet<Hotel> listHotel;
 
     /**
      * @param name the name of the Agency

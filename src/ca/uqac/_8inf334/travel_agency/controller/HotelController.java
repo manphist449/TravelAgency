@@ -1,7 +1,7 @@
 package ca.uqac._8inf334.travel_agency.controller;
 
-import ca.uqac._8inf334.travel_agency.Hotel;
-import ca.uqac._8inf334.travel_agency.Location;
+import ca.uqac._8inf334.travel_agency.classes.Hotel;
+import ca.uqac._8inf334.travel_agency.classes.Location;
 
 import java.util.ArrayList;
 

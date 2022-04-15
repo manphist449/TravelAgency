@@ -1,6 +1,6 @@
 package ca.uqac._8inf334.travel_agency.comparator;
 
-import ca.uqac._8inf334.travel_agency.Review;
+import ca.uqac._8inf334.travel_agency.classes.Review;
 
 import java.util.Comparator;
 
