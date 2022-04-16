@@ -12,14 +12,18 @@ public class AgencyController {
     private DestinationController destinationController;
     private PackageDealController packageDealController;
     private Agency agency;
-    public AgencyController(Agency myAgency)
+    public AgencyController()
     {
-        this.agency = myAgency;
+        this.hotelController = new HotelController();
+        this.destinationController = new DestinationController();
+        this.packageDealController = new PackageDealController();
     }
 
     public void addHotel(Hotel hotel)
     {
-
+        this.agency.addHotel(hotel);
+        this.hotelController.setHotel(hotel);
+        this.hotelController.setAgency(this.agency);
     }
     public void addPackageDeal(PackageDeal deal)
     {
@@ -28,6 +32,11 @@ public class AgencyController {
     public void addDestination(Destination destination)
     {
 
+    }
+
+    public void setAgency(Agency agency)
+    {
+        this.agency = agency;
     }
 
 }

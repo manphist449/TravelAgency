@@ -1,12 +1,14 @@
 package ca.uqac._8inf334.travel_agency.classes;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Destination {
 
     private String name;
     private ArrayList<Location> listLocation;
     private ArrayList<Activity> listActivity;
+    private HashSet<Hotel> listHotel;
     public Destination(String name){
         this.name = name;
         this.listLocation = new ArrayList<>();
@@ -61,6 +63,11 @@ public class Destination {
     public void addActivity(Activity activity) {
 
         this.listActivity.add(activity);
+    }
+
+    public void addHotel(Hotel hotel)
+    {
+        this.listHotel.add(hotel);
     }
 
 }

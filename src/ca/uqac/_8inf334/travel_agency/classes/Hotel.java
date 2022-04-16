@@ -11,6 +11,8 @@ public class Hotel {
     private ArrayList<Review> listReview;
     private ArrayList<String> listAmenities;
     private Location location;
+    private Agency agency;
+    private Destination destination;
 
     public Hotel(String name, Location location){
         this.name = name;
@@ -118,4 +120,18 @@ public class Hotel {
     {
         return "Hotel: " + this.getName();
     }
+
+    public void setAgency(Agency agency)
+    {
+        this.agency = agency;
+    }
+    public Agency getAgency()
+    {
+       return this.agency;
+    }
+    public void setDestination(Destination destination)
+    {
+        this.destination = destination;
+    }
+
 }

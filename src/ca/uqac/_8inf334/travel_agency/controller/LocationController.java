@@ -101,10 +101,10 @@ public class LocationController extends CommandLineController {
                     System.out.println("Le nom a été modifié: " + oldName + " -> " + location.getName());
                 }break;
                 case "2":{
-                    hController.createHotel(location);
+//                    hController.createHotel(location);
                 }break;
                 case "3":{
-                    hController.listHotel(location.getListHotel());
+//                    hController.listHotel(location.getListHotel());
                 }break;
                 case "x":{
                     System.out.println("Retour!");

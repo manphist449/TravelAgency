@@ -1,5 +1,3 @@
-package ca.uqac._8inf334.travel_agency;
-
 import ca.uqac._8inf334.travel_agency.classes.Agency;
 import ca.uqac._8inf334.travel_agency.classes.Destination;
 import ca.uqac._8inf334.travel_agency.classes.Hotel;
@@ -15,8 +13,8 @@ public class App {
 
 //        Agency myAgency = testAgency();
         Agency myAgency = new Agency("Voyage à rabais");
-        System.out.println(myAgency);
-//        AgencyController myAgencyController = new AgencyController(myAgency);
+        System.out.println(myAgency.name);
+        AgencyController myAgencyController = new AgencyController(myAgency);
 
         //first();
     }

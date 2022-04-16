@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 public class Agency {
 
-    private String name;
+    public String name;
     private ArrayList<Destination> listDestination;
     private HashSet<PackageDeal> listPackage;
     private HashSet<Hotel> listHotel;
@@ -53,5 +53,14 @@ public class Agency {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void addHotel(Hotel hotel)
+    {
+        this.listHotel.add(hotel);
+    }
+    public boolean hasHotel(Hotel hotel)
+    {
+        return this.listHotel.contains(hotel);
     }
 }
