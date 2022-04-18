@@ -1,9 +1,10 @@
-package ca.uqac._8inf334.travel_agency.classes;
+package project.classes;
 
 public class Activity {
 
     private String name;
     private String description = "";
+    private Destination myDestination;
 
     public Activity(String name){
         this.name = name;
@@ -37,5 +38,15 @@ public class Activity {
      */
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void setDestination(Destination destination)
+    {
+        this.myDestination = destination;
+    }
+
+    public Destination getDestination()
+    {
+        return this.myDestination;
     }
 }

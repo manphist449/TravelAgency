@@ -1,4 +1,4 @@
-package ca.uqac._8inf334.travel_agency.classes;
+package project.classes;
 
 public enum Stars {
     ONE(1),

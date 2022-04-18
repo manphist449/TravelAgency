@@ -1,4 +1,4 @@
-package ca.uqac._8inf334.travel_agency.classes;
+package project.classes;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -11,6 +11,7 @@ public class Review {
     private String comment;
     private String username;
     private Stars rating;
+    private  Hotel myHotel;
 
     public Review(String username, String comment, Stars star, String date){
 
@@ -24,30 +25,43 @@ public class Review {
      * @return date of the review
      */
     public String getDate() {
-        return date;
+        return this.date;
     }
 
     /**
      * @return the comment describing the review
      */
     public String getComment() {
-        return comment;
+        return this.comment;
     }
 
     /**
      * @return the username of the person who did the review
      */
     public String getUsername() {
-        return username;
+        return this.username;
     }
 
     /**
      * @return the number of stars the review get / his score ( 1 poorly ... 5 excellent)
      */
     public int getRatingValue() {
-        return rating.getValue();
+        return this.rating.getValue();
     }
 
+    public void setHotel(Hotel hotel)
+    {
+        this.myHotel = hotel;
+    }
+
+    public Hotel getHotel()
+    {
+        return this.myHotel;
+    }
+
+    /**
+     * @return valid the string is valid date in format yyyy/MM/dd
+     */
     public static boolean isValidDate(String date)  {
         DateFormat format = new SimpleDateFormat("yyyy/MM/dd");
         format.setLenient(false);

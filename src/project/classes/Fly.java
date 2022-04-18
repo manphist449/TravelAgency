@@ -1,4 +1,4 @@
-package ca.uqac._8inf334.travel_agency.classes;
+package project.classes;
 
 public class Fly {
 
@@ -23,5 +23,13 @@ public class Fly {
      */
     public String getCompagnyName() {
         return compagnyName;
+    }
+
+    @Override
+    public String toString() {
+
+        StringBuilder strbuilder = new StringBuilder();
+        strbuilder.append(this.getCompagnyName()).append("(").append(this.getFlyClass()).append(")");
+        return strbuilder.toString();
     }
 }
