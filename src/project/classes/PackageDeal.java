@@ -37,11 +37,11 @@ public class PackageDeal {
     @Override
     public String toString() {
 
-        StringBuilder strbuilder = new StringBuilder("<---Package Deal--->").append(System.lineSeparator());
-        strbuilder.append("Price:").append(this.getPrice()).append("$").append(System.lineSeparator());
-        strbuilder.append("Date:").append(this.getDate()).append(System.lineSeparator());
-        strbuilder.append("Fly:").append(this.getFly()).append(System.lineSeparator());
-        strbuilder.append("Hotel:").append(this.getHotel().getName()).append(System.lineSeparator());
+        StringBuilder strbuilder = new StringBuilder("Deal ->");
+        strbuilder.append(" Price:").append(this.getPrice()).append("$");
+        strbuilder.append(" Date:").append(this.getDate());
+        strbuilder.append(" Fly:").append(this.getFly());
+        strbuilder.append(" Hotel:").append(this.getHotel().getName());
         return strbuilder.toString();
     }
 }

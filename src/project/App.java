@@ -16,6 +16,10 @@ public class App {
         mc.addReviewToHotel(mc.allReview.get(0),mc.allHotel.get(0));
         mc.addReviewToHotel(mc.allReview.get(1),mc.allHotel.get(1));
         mc.addReviewToHotel(mc.allReview.get(2),mc.allHotel.get(1));
+
+        mc.showAllReviewFromHotel(mc.allHotel.get(1));
+        mc.showAllHotelFromAgency(mc.allAgency.get(0));
+        mc.showAllPackageDealFromAgency(mc.allAgency.get(0));
     }
 
     private static void populate(MainController mainController)

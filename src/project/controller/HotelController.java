@@ -36,4 +36,17 @@ class HotelController {
         this.myHotel.listPackageDeal.add(packageDeal);
     }
 
+    public String getViewAllReview()
+    {
+        StringBuilder sb = new StringBuilder("<Hotel \""+ this.myHotel.getName() +"\" reviews>").append(System.lineSeparator());
+
+        for (Review review: myHotel.listReview) {
+            sb.append("Rating:").append(review.getRatingValue()).append(" By:").append(review.getUsername()).append(" On:").append(review.getDate());
+            sb.append(System.lineSeparator());
+            sb.append("\"").append(review.getComment()).append("\"").append(System.lineSeparator());
+        }
+
+        return sb.toString();
+    }
+
 }

@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 public class Destination {
 
-    private String name;
+    public String name;
     public  HashSet<Activity> listActivity;
     public  HashSet<Hotel> listHotel;
     public Agency myAgency;

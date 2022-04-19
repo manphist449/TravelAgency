@@ -119,4 +119,21 @@ public class MainController {
         destinationController.removeActivity(activity);
         activity.setDestination(null);
     }
+
+    public void showAllReviewFromHotel(Hotel hotel)
+    {
+        hotelController.setHotel(hotel);
+        System.out.println(hotelController.getViewAllReview());
+    }
+
+    public void showAllPackageDealFromAgency(Agency agency)
+    {
+        agencyController.setAgency(agency);
+        System.out.println(agencyController.getViewAllPackageDeal());
+    }
+    public void showAllHotelFromAgency(Agency agency)
+    {
+        agencyController.setAgency(agency);
+        System.out.println(agencyController.getViewAllHotel());
+    }
 }

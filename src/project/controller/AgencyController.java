@@ -51,4 +51,26 @@ class AgencyController {
             throw new Exception("Destination already exist in the Agency");
         }
     }
+
+    public String getViewAllPackageDeal()
+    {
+        StringBuilder sr = new StringBuilder("<Agency Package Deal>").append(System.lineSeparator());
+
+        for (PackageDeal pd: myAgency.listPackageDeal) {
+            sr.append(pd.toString()).append(System.lineSeparator());
+        }
+
+        return sr.toString();
+    }
+
+    public String getViewAllHotel()
+    {
+        StringBuilder sr = new StringBuilder("<Agency Hotel>").append(System.lineSeparator());
+
+        for (Hotel hotel: myAgency.listHotel) {
+            sr.append(hotel.toString()).append(System.lineSeparator());
+        }
+
+        return sr.toString();
+    }
 }
